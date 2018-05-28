@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    local_ssl_generator:
+        build: "."
+        container_name: "local_ssl_generator"
+        restart: "no"
+        volumes:
+            - "./etc/ssl:/etc/ssl/"
