@@ -22,3 +22,5 @@ RUN openssl req \
         -passin pass:localhost1234
 
 RUN openssl pkcs12 -export -out /etc/ssl/localhost.pfx -inkey /etc/ssl/localhost.key -in /etc/ssl/localhost.crt -passout pass:localhost1234 -passin pass:localhost1234
+
+CMD ["/bin/bash"]

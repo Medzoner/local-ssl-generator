@@ -5,5 +5,7 @@ services:
         build: "."
         container_name: "local_ssl_generator"
         restart: "no"
+        stdin_open: true
+        tty: true
         volumes:
             - "./etc/ssl:/etc/ssl/"
